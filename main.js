@@ -3,7 +3,7 @@ import Base64 from 'base64-js';
 import MarkdownIt from 'markdown-it';
 import { maybeShowApiKeyBanner } from './gemini-api-banner';
 
-let API_KEY = 'AIzaSyCPj6LSXALe6Zc_vPGkKmKQchF81tJT6e8';
+let API_KEY = 'gemini-api-key';
 let form = document.querySelector('form');
 let promptInput = document.querySelector('input[name="prompt"]');
 let output = document.querySelector('.output');

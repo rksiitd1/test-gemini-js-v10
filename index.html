@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT UI Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="menu-item active">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
+                </svg>
+                ChatGPT
+            </div>
+            <div class="menu-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="currentColor"/>
+                    <path d="M2 17L12 22L22 17" fill="currentColor"/>
+                    <path d="M2 12L12 17L22 12" fill="currentColor"/>
+                </svg>
+                Wolfram
+            </div>
+            <div class="menu-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" fill="currentColor"/>
+                </svg>
+                Universal Primer
+            </div>
+            <div class="menu-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z" fill="currentColor"/>
+                </svg>
+                Explore GPTs
+            </div>
+            <!-- Rest of the sidebar content -->
+        </div>
+        <div class="main-content">
+            <div class="header">
+              <img src="chatgpt-logo.svg" alt="ChatGPT Logo" class="logo">
+            </div>
+            <div class="content">
+                <h3>How can I help you today?</h3>
+                <div class="suggestions">
+                    <div class="suggestion-card">Quiz me on world capitals</div>
+                    <div class="suggestion-card">Python script for daily email reports</div>
+                    <div class="suggestion-card">What to do with kids' art</div>
+                    <div class="suggestion-card">Content calendar for TikTok</div>
+                </div>
+                <div class="output"></div>
+            </div>
+            <div class="input-area">
+                <form>
+                    <div class="input-box">
+                        <input type="text" name="prompt" placeholder="Message ChatGPT...">
+                        <button type="submit">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="image-picker" style="display: none;">
+                        <input type="radio" name="chosen-image" value="/baked_goods_1.jpg" checked>
+                        <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
+                        <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
